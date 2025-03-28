@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="SocialGen: Towards Arbitrary Multi-Human Motion Generation and Understanding.">
+        content="SocialGen: Modeling Multi-Human Social Interaction with Language Models">
   <!-- <meta name="keywords" content="Nerfies, D-NeRF, NeRF"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>SocialGen: Modeling Multi-Human Social Interaction with Language Models</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/SU_Seal_Red.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -112,11 +112,26 @@
             </span>
           </div> -->
 
-          <div class="is-size-5 publication-authors">
+          <!-- <div class="is-size-5 publication-authors"> -->
             <!-- <span class="author-block"><sup>1</sup>University of Washington,</span>
             <span class="author-block"><sup>2</sup>Google Research</span> -->
             <!-- <span class="author-block">Stanford University</span> -->
+          <!-- </div> -->
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://heng14.github.io/">Heng Yu</sup>*</a>,</span>
+            <span class="author-block"><a href="https://juzezhang.github.io/">Juze Zhang</sup>*</a>,</span>
+            <span class="author-block"><a href="https://changan.io/">Changan Chen</a>,</span>
+            <span class="author-block"><a href="https://ai.stanford.edu/~xtiange/">Tiange Xiang</a>,</span> 
+            <span class="author-block"><a>Yusu Fang</a>,</span> <br>
+            <span class="author-block"><a href="https://www.niebles.net/">Juan Carlos Niebles</a>,</span>
+            <span class="author-block"><a href="https://stanford.edu/~eadeli/">Ehsan Adeli</a></span>
           </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Stanford University</span> <br>
+            <span class="author-block"><sup>*</sup>indicates equal contribution.</span>
+          </div>
+
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -197,7 +212,7 @@
 <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
     <video id="example-video" autoplay muted loop controls playsinline style="width:50%; height:auto; margin-bottom:15px;">
-      <source src="./static/videos/sig_1080_v2.mp4" type="video/mp4">
+      <source src="./static/videos/demo_video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -212,22 +227,18 @@
         <div class="content has-text-justified">
           <p>
             Human interactions in everyday life are inherently social, involving engagements with diverse individuals across various contexts. 
-            Generating and understanding these social interactions is fundamental to a wide range of real-world applications, including collaborative robotics, 
-            virtual environments, and social behavior analysis. 
+            Modeling these social interactions is fundamental to a wide range of real-world applications.
           </p>
           <p>
-            In this paper, we introduce <strong>SocialGen</strong>, the first unified motion-language model capable of modeling 
-            interaction behaviors among varying numbers of individuals, to address this crucial yet challenging problem. Unlike prior methods that are limited to 
-            two-person interactions, we propose a novel social motion representation that supports tokenizing the motions of an arbitrary number of individuals and 
-            aligning them with the language space. This alignment enables the model to leverage rich, pretrained linguistic knowledge to better understand and reason 
-            about human social behaviors. To tackle the challenges of data scarcity and complexity in this domain, we curate a comprehensive multi-human interaction dataset, 
-            <strong>SocialX</strong>, enriched with text-based annotations. 
-          <p>
-            Based on this dataset, we establish the first comprehensive benchmark for multi-human interaction tasks and 
-            conduct an in-depth analysis of its statistics. Experimental results demonstrate that our method achieves state-of-the-art performance across motion-language tasks, 
-            significantly surpassing existing approaches. By unifying motion representation with language understanding, our work sets a new standard for multi-human interaction 
-            modeling. Our dataset, corresponding code, and pre-trained models will be made publicly available to support future research in this area.
+            In this paper, we introduce <strong>SocialGen</strong>, the first unified motion-language model capable of modeling interaction behaviors among varying numbers of individuals, 
+            to address this crucial yet challenging problem. Unlike prior methods that are limited to two-person interactions, we propose a novel social motion representation that supports 
+            tokenizing the motions of an arbitrary number of individuals and aligning them with the language space. This alignment enables the model to leverage rich, pretrained linguistic 
+            knowledge to better understand and reason about human social behaviors. To tackle the challenges of data scarcity, we curate a comprehensive multi-human interaction dataset, 
+            <strong>SocialX</strong>, enriched with textual annotations. 
           </p>
+          <p>
+            Leveraging this dataset, we establish the first comprehensive benchmark for multi-human interaction tasks. Our method achieves state-of-the-art performance across motion-language 
+            tasks, setting a new standard for multi-human interaction modeling.
           </p>
         </div>
       </div>
